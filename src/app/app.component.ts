@@ -12,4 +12,7 @@ export class AppComponent {
   openMenu() {
     this.isMenuOpened = true;
   }
+  closeMenu() {
+    this.isMenuOpened = false;
+  }
 }

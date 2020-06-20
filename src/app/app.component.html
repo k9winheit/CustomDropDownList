@@ -4,7 +4,7 @@
 <div class="dropdown">
 	<button class="dropbtn" (click)="openMenu()">Dropdown</button>
 	<div class="dropdown-content" [ngStyle]="{'display':isMenuOpened == false ? 'none' : 'block' }">
-		<div>
+		<div style="text-align:right;cursor:pointer;" (click)="closeMenu()">
 			close
 		</div>
 		<a href="#">History</a>
