@@ -2,14 +2,17 @@
 <p>Move the mouse over the button to open the dropdown menu.</p>
 
 <div class="dropdown">
-	<button class="dropbtn">Dropdown</button>
-	<div class="dropdown-content" > 
+	<button class="dropbtn" (click)="openMenu()">Dropdown</button>
+	<div class="dropdown-content" [ngStyle]="{'display':isMenuOpened == false ? 'none' : 'block' }">
 		<div>
 			close
 		</div>
-		<a href="#">Link 1</a>
-		<a href="#">Link 2</a>
-		<a href="#">Link 3</a>
+		<a href="#">History</a>
+		<a href="#">Maths</a>
+		<a href="#">Test123</a>
+		<a href="#">Music</a>
+		<a href="#">Geography</a>
+		<a href="#">Science</a>
 
 	</div>
 </div>
