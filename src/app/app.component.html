@@ -1,18 +1,23 @@
-<h2>Hoverable Dropdown</h2>
-<p>Move the mouse over the button to open the dropdown menu.</p>
+<h2>Menu Panel by three dots</h2>
+<p>Click three dots icon to open menu list panel</p>
 
 <div class="dropdown">
-	<button class="dropbtn" (click)="openMenu()">Dropdown</button>
+	<!-- <button class="dropbtn" (click)="openMenu()">Dropdown</button> -->
+  <img src="https://image.flaticon.com/icons/png/512/57/57013.png" style="width:50px;cursor:pointer"  (click)="openMenu()"/>
+  <span style="text-align:left">
+    {{selectedSubName}}
+  </span>
 	<div class="dropdown-content" [ngStyle]="{'display':isMenuOpened == false ? 'none' : 'block' }">
 		<div style="text-align:right;cursor:pointer;" (click)="closeMenu()">
-			close
+		 <img src="https://image.flaticon.com/icons/svg/106/106830.svg" style="width:20px;cursor:pointer;padding:5px"  (click)="openMenu()"/>
 		</div>
-		<a href="#">History</a>
+		<a  style="cursor:pointer" (click)="selectedSubject('History')">History</a>
 		<a href="#">Maths</a>
 		<a href="#">Test123</a>
 		<a href="#">Music</a>
 		<a href="#">Geography</a>
 		<a href="#">Science</a>
+    <a href="#">Bio-chemical Engineering</a>
 
 	</div>
 </div>

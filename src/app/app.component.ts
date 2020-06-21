@@ -7,6 +7,7 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   isMenuOpened: boolean = false;
+  selectedSubName : string;
   constructor() {}
 
   openMenu() {
@@ -14,5 +15,10 @@ export class AppComponent {
   }
   closeMenu() {
     this.isMenuOpened = false;
+  }
+
+  selectedSubject(subName : string){
+     this.isMenuOpened = false;
+     this.selectedSubName = subName;
   }
 }
